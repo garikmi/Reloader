@@ -52,22 +52,15 @@ document.getElementById("rfrshIntrvl20").addEventListener("click", () => {
 });
 
 document.getElementById("rfrshIntrvl30").addEventListener("click", () => {
-    chrome.storage.session.get(null)
-        .then((result) => {
-            console.log(result);
-        });
-
-    //refreshInterval = 30;
-    //storeValues();
-    //refreshUI();
+    refreshInterval = 30;
+    storeValues();
+    refreshUI();
 });
 
 document.getElementById("rfrshIntrvl60").addEventListener("click", () => {
-    chrome.storage.session.clear();
-
-    //refreshInterval = 60;
-    //storeValues();
-    //refreshUI();
+    refreshInterval = 60;
+    storeValues();
+    refreshUI();
 });
 
 document.getElementById("turnOffAll").addEventListener("click", () => {
